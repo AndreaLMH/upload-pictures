@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>下拉列表和上传图片</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+	<meta name="format-detection" content="telephone=no"/>
+	<meta name="format-detection" content="email=no"/>
+	<link rel="stylesheet" href="css/select.css">
+	<link rel="stylesheet" href="css/dialog.css">
+	<style>
+		img{border:none; vertical-align:middle;}
+		a{ text-decoration:none;} 
+		*{padding: 0;margin: 0;list-style: none;}
+		html,body,.container{
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+		}
+		.container{
+			display: -webkit-flex;
+			-webkit-flex-direction:column;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="wrap">
+			<section class="section">
+				<h3>区  域：</h3>
+				<div class="list">
+					<label for=""></label>
+					<select id="" class="sel_box" data-key="localArea">
+					</select>
+				</div>
+				<div class="list">
+					<label for=""></label>
+					<select id="">
+					</select>
+				</div>
+			</section>
+			<section class="section">
+				<h3>品  牌：</h3>
+				<div class="list">
+					<label for=""></label>
+					<select id="" class="sel_box" data-key="ObjectType">
+					</select>
+				</div>
+				<div class="list">
+					<label for=""></label>
+					<select id="">
+					</select>
+				</div>
+			</section>
+			<section id="counter_box">你还可以上传<span></span>张,已经上传<em></em>张</section>
+			<section id="upLoad_box">
+				<ul>
+					<li id="last_li">
+						<img src="img/upimg.png" alt="">
+						<input type="file" id="file">
+					</li>
+				</ul>
+			</section>
+		</div>
+	</div>
+	<script src="js/zepto.min.js"></script>
+	<script src="js/select.js"></script>
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/dialog.js"></script>
+	<script src="js/exif.js"></script>
+	<script src="js/upload.js"></script>
+	<script>
+		$.Upload_img({
+			counter_box:$("#counter_box"),
+			wrap:$("#upLoad_box"),
+			file:$("#file")
+		})
+	</script>
+</body>
+</html>

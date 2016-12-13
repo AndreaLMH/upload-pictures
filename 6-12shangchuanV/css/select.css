@@ -1,0 +1,98 @@
+@charset "UTF-8";
+* {
+  -webkit-box-sizing: border-box; }
+.container {
+  padding: 10px; }
+.wrap {
+  width: 100%;
+  border: 1px solid #000; }
+.section {
+  width: 100%;
+  height: 50px;
+  border-bottom: 1px solid #ccc;
+  display: -webkit-flex;
+  position: relative; }
+  .section h3 {
+    font-size: 16px;
+    line-height: 50px;
+    width: 70px;
+    padding-left: 10px; }
+.list {
+  -webkit-flex-grow: 1;
+  height: 50px;
+  margin-right: 10px;
+  position: relative; }
+  .list:after {
+    content: "";
+    width: 0;
+    height: 0;
+    border: 8px solid transparent;
+    border-top-color: #333;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    margin-top: -4px; }
+  .list label {
+    width: 100%;
+    height: 40px;
+    background: #ccc;
+    display: inline-block;
+    margin-top: 5px;
+    line-height: 40px;
+    text-align: center; }
+  .list:last-child {
+    margin: 0;
+    visibility: hidden; }
+  .list select {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 40px;
+    margin-top: 5px;
+    opacity: 0; }
+#counter_box {
+  height: 50px;
+  line-height: 50px;
+  padding-left: 8px;
+  font-family: "微软雅黑";
+  font-size: 14px;
+  border-bottom: 1px solid #ccc; }
+  #counter_box span {
+    color: red; }
+  #counter_box em {
+    color: red;
+    font-style: normal; }
+#upLoad_box {
+  width: 100%;
+  height: auto; }
+  #upLoad_box ul {
+    width: 100%; }
+    #upLoad_box ul li {
+      width: 25%;
+      height: 80px;
+      padding: 10px;
+      float: left;
+      position: relative;
+      background: url(../img/upimg_loading.gif) no-repeat;
+      background-size: 100% 100%; }
+      #upLoad_box ul li img {
+        width: 100%;
+        height: 100%; }
+      #upLoad_box ul li a {
+        width: 15px;
+        height: 15px;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        background: url(../img/upimg_x.png) no-repeat;
+        background-size: contain;
+        font-size: 0; }
+      #upLoad_box ul li input[type=file] {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0px;
+        top: 10px;
+        opacity: 0; }
+/*# sourceMappingURL=select.css.map */
